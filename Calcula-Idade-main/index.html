@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Idade</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div id="quest">
+        <form id="pergYear">
+            <label for="year">Em que ano você nasceu?</label>
+            <input type="number" id="year"><br>
+            <input type="button" id="bContinua" value="Continuar" onclick="escondeItem()">
+        </form>
+        <form id="pergBDay">
+            <div>Você já fez aniversário esse ano?</div>
+            <label for="rBDs">Sim</label>
+            <input type="radio" value="Sim" name="rBD" id="rBDs">
+            <label for="rBDn">Não</label>
+            <input type="radio" value="Não" name="rBD" id="rBDn"><br>
+            <input type="button" id="bContinua2" value="Continuar" onclick="mostraIdade()"><br>
+            <label id="resultado"></label>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
